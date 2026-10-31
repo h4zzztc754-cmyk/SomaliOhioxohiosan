@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SomaliOhioxgmovies — discover movies you can watch for free and legally.">
+  <title>SomaliOhioxgmovies — Free Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SomaliOhioxgmovies home"><span class="brand-mark">S</span> Somali<span>Ohioxg</span>movies</a>
+    <nav><a href="#browse">Browse</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR FREE MOVIE HUB</p>
+        <h1>Good movies.<br><span>No subscription.</span></h1>
+        <p class="intro">Discover films that are free to watch legally. Pick a title and watch on its official source.</p>
+        <a class="primary" href="#browse">Explore movies <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="reel reel-one"></div><div class="reel reel-two"></div>
+        <div class="ticket"><span>SO</span><small>NOW SHOWING</small></div>
+      </div>
+    </section>
+
+    <section class="browse" id="browse">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your next movie</h2></div>
+        <span class="free-label">100% FREE TO BROWSE</span>
+      </div>
+      <div class="tools">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search movies…" autocomplete="off"></label>
+        <div class="filters" role="group" aria-label="Filter movies">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Drama">Drama</button>
+          <button class="filter" data-filter="Comedy">Comedy</button>
+          <button class="filter" data-filter="Documentary">Documentary</button>
+          <button class="filter" data-filter="Animation">Animation</button>
+        </div>
+      </div>
+      <div id="movie-grid" class="movie-grid" aria-live="polite"></div>
+      <p class="notice">This starter site does not host or upload films. Add only movies you own or have permission to stream, and link to their authorized player.</p>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">ABOUT THE SITE</p>
+      <h2>Entertainment should be easy to discover.</h2>
+      <p>SomaliOhioxgmovies is a simple catalogue for finding free, legally available films. Streaming is provided by each film’s authorized source.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand small" href="#"><span class="brand-mark">S</span> Somali<span>Ohioxg</span>movies</a><span>© <span id="year"></span> SomaliOhioxgmovies</span></footer>
+  <dialog id="movie-dialog">
+    <button class="close" id="close-dialog" aria-label="Close">×</button>
+    <p class="eyebrow">MOVIE DETAILS</p><h2 id="dialog-title"></h2><p id="dialog-description"></p>
+    <a id="watch-link" class="primary" href="#" target="_blank" rel="noopener noreferrer">Watch on official source ↗</a>
+    <p class="dialog-note">You’ll leave SomaliOhioxgmovies and open the provider’s website.</p>
+  </dialog>
+  <script src="movies.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
